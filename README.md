@@ -6,7 +6,7 @@
 ## About Guided-Grounded-InstructPix2Pix
 <p align="center">
   <img src="imgs/main_architecture_for_relative.png" alt="relative_arch" width="500" />
-	
+  |	
   <img src="imgs/main_architecture_for_add.png" alt="add_arch" width="500" />
 </p>
 <p align="justify">
