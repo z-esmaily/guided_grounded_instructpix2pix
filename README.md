@@ -19,10 +19,12 @@ Instruction-based image editing has emerged as an intuitive paradigm for image m
 </p>
 
 ## Installation
-You need to install the GroundingDINO model. You can do this by [GroundingDINO]([https://github.com/arthur-71/Grounded-Instruct-Pix2Pix#:~:text=Please%20refer%20to-,GroundingDINO,-if%20you%20encounter](https://github.com/IDEA-Research/GroundingDINO)).
+You need to install the GroundingDINO model. You can do this by visiting [GroundingDINO](https://github.com/IDEA-Research/GroundingDINO).
+
 We have also prepared a GroundingDINO folder for download. This folder must be in the root directory. you can download it from here:
 you also need download sam model 
 You will need to :
+
 	python -m pip install -e GroundingDINO
 	python -m spacy download en_core_web_sm
 	pip install diffusers transformers accelerate scipy safetensors
