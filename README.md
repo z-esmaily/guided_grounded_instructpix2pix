@@ -1,8 +1,8 @@
-# GGIP2P
+# Guided-Grounded-InstructPix2Pix (GGIP2P)
 
 **Official PyTorch implementation of the paper "Guided-Grounded-InstructPix2Pix (GGIP2P): Instruction-Based Image Editing with Grounding and Mask Generation Control"** by zahra esmaily, Hossein Ebrahimpour-Komleh
 
-## About Guided-Grounded-InstructPix2Pix
+## About GGIP2P
 <p align="center">
   <img src="imgs/main_architecture_for_relative.png" alt="relative_arch" width="45%" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -21,7 +21,8 @@ Instruction-based image editing has emerged as an intuitive paradigm for image m
 You need to install the GroundingDINO model. You can do this by visiting [GroundingDINO](https://github.com/IDEA-Research/GroundingDINO).
 
 We have also prepared a GroundingDINO folder for download. This folder must be in the root directory. you can download it from here
-you also need download sam model 
+
+You also need download sam model 
 
 You will need to :
 
@@ -35,6 +36,7 @@ You will need to :
 
 ## Datasets & models
 Download the pre-trained model from [here](https://drive.google.com/), and place it in the `"models"` directory
+
 If you want to train models, you can download datasets from [here](https://drive.google.com/)
 
 
@@ -45,7 +47,8 @@ To run our proposed pipline we provide a jupyter notebook:
 
 ## Examples
 <p align="center">
-  <img src="imgs/main_architecture_for_relative.png" alt="relative_arch" width="45%" />
+  <img src="imgs/figB11.jpg" alt="add_butterfly" width="45%" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="imgs/main_architecture_for_add.png" alt="add_arch" width="45%" />
+  <img src="imgs/figB6.jpg" alt="relative_horse" width="45%" />
+  <img src="imgs/fig10.jpg" alt="Pronoun_them" width="45%" /> 		
 </p>
