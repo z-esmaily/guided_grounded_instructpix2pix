@@ -47,8 +47,18 @@ To run our proposed pipline we provide a jupyter notebook:
 
 ## Examples
 <p align="center">
-  <img src="imgs/figB11.jpg" alt="add_butterfly" width="45%" />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="imgs/figB6.jpg" alt="relative_horse" width="45%" />
-  <img src="imgs/fig10.jpg" alt="Pronoun_them" width="45%" /> 		
+  <table>
+    <tr>
+      <td>
+        <img src="imgs/figB11.jpg" alt="add_butterfly" width="100%" /><br>
+	<p>IP2P stands for  InstructPix2Pix<br>
+	 GIP2P stands for  Grounded-InstructPix2Pix<br>
+	 GGIP2P stands for  Guided-Grounded-InstructPix2Pix</p>
+      </td>      
+      <td>
+        <img src="imgs/figB6.jpg" alt="relative_horse" align="right"/><br>
+        <img src="imgs/fig10.jpg" alt="Pronoun_them" align="right"/>
+      </td>
+    </tr>
+  </table>
 </p>
