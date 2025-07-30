@@ -1,7 +1,6 @@
 # GGIP2P
 
 **Official PyTorch implementation of the paper "Guided-Grounded-InstructPix2Pix (GGIP2P): Instruction-Based Image Editing with Grounding and Mask Generation Control"** by zahra esmaily, Hossein Ebrahimpour-Komleh
-# an example image
 
 ## About Guided-Grounded-InstructPix2Pix
 <p align="center">
@@ -21,8 +20,9 @@ Instruction-based image editing has emerged as an intuitive paradigm for image m
 ## Installation
 You need to install the GroundingDINO model. You can do this by visiting [GroundingDINO](https://github.com/IDEA-Research/GroundingDINO).
 
-We have also prepared a GroundingDINO folder for download. This folder must be in the root directory. you can download it from here:
+We have also prepared a GroundingDINO folder for download. This folder must be in the root directory. you can download it from here
 you also need download sam model 
+
 You will need to :
 
 	python -m pip install -e GroundingDINO
@@ -33,9 +33,19 @@ You will need to :
 	pip install git+https://github.com/openai/CLIP.git
 	pip install transformers torch peft tqdm numpy scikit-learn
 
-To run our proposed pipline we provide a jupyter notebook:
-Download the pre-trained model from [here](https://drive.google.com/), and place it in the `"pretrained_models/bert"` directory
+## Datasets & models
+Download the pre-trained model from [here](https://drive.google.com/), and place it in the `"models"` directory
+If you want to train models, you can download datasets from [here](https://drive.google.com/)
 
-	guided_grounded-instruct-pix2pix.ipynb
+
+## Easy to use
+To run our proposed pipline we provide a jupyter notebook:
+
+	GGIP2P_pipline.ipynb
 
 ## Examples
+<p align="center">
+  <img src="imgs/main_architecture_for_relative.png" alt="relative_arch" width="45%" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="imgs/main_architecture_for_add.png" alt="add_arch" width="45%" />
+</p>
