@@ -32,36 +32,41 @@ This is a specialized path that is triggered when the instruction requires addin
  * &nbsp; Size Prediction: When the instruction is to add a new object relative to an existing one, our size prediction model estimates the dimensions of the new object based on the reference object's size and contextual information. This model is trained on a custom dataset of co-planar objects to ensure realistic size relationships.
  * &nbsp; Mask Generation: A rectangular mask is automatically created at the correct location with the predicted size, providing precise guidance for the new object's placement.
 
-**4. Localized Image Editing**
+**4. Localized Image Editing:**
 The final editing step uses a modified version of the InstructPix2Pix diffusion model. Following the approach of Grounded-InstructPix2Pix, it utilizes Blended Latent Diffusion. The pipeline passes a simplified, direct instruction to the editing model, which removes confusing contextual information and enhances the semantic fidelity of the final edit.
 This modular design enables GGIP2P to achieve superior performance in both instruction fidelity and background preservation while remaining computationally efficient.	
 </p>
 
 ## Installation
-You need to install the GroundingDINO model. You can do this by visiting [GroundingDINO](https://github.com/IDEA-Research/GroundingDINO).
+You need to download the following pre-trained models:
 
-We have also prepared a GroundingDINO folder for download. This folder must be in the root directory. you can download it from [here](https://drive.google.com/)
+GroundingDINO: You can find instructions for the official installation on the [GroundingDINO GitHub page](https://github.com/IDEA-Research/GroundingDINO). 
 
-You also need download sam model 
+We have also prepared a pre-configured folder, which you can download from [here](https://drive.google.com/) and place in the root directory.
 
-You will need to :
+SAM Model: Download the Segment Anything Model from [here](https://drive.google.com/).
 
+You will also need to install the following dependencies:
+
+	# Install GroundingDINO and Segment Anything
 	python -m pip install -e GroundingDINO
-	python -m spacy download en_core_web_sm
-	pip install diffusers transformers accelerate scipy safetensors
+ 	python -m spacy download en_core_web_sm
 	pip install segment-anything
+	
+	# Install other required libraries
+	pip install diffusers transformers accelerate scipy safetensors
 	pip install torchmetrics
 	pip install git+https://github.com/openai/CLIP.git
 	pip install transformers torch peft tqdm numpy scikit-learn
 
-## Datasets & models
-Download the pre-trained model from [here](https://drive.google.com/), and place it in the `"models"` directory
+## Our Models & Datasets  
+Download our pre-trained "instruction target detection" and "size predictor" models from [here](https://drive.google.com/), and place it in the `"models"` directory
 
-If you want to train models, you can download datasets from [here](https://drive.google.com/)
+Datasets (Optional): If you want to train the models yourself, you can download our custom datasets from [here](https://drive.google.com/)
 
 
 ## Easy to use
-To run our proposed pipline we provide a jupyter notebook:
+To run our proposed pipeline, we provide a Jupyter Notebook.
 
 	GGIP2P_pipline.ipynb
 
