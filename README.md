@@ -14,29 +14,26 @@
 <p align="justify">
 We introduce Guided-Grounded-InstructPix2Pix (GGIP2P), a novel pipeline that introduces a multi-step grounding and disambiguation process for instruction-based image editing. Our pipeline addresses the limitations of previous methods, which often struggle with complex instructions and the generation of new objects. GGIP2P operates through a multi-step process to ensure accurate target grounding and editing.
 
-1. Instruction Disambiguation and Initial Target Identification:
+**1. Instruction Disambiguation and Initial Target Identification:**
 This stage focuses on the linguistic processing of the instruction before it interacts with the image.
+ * &nbsp; NER-based Target Detection: Using a fine-tuned BERT model with Low-Rank Adaptation (LoRA), we identify the main targets in the instruction by framing the problem as a Named Entity Recognition (NER) task. 
+ * &nbsp; Pronoun Resolution: A dedicated mechanism replaces ambiguous pronouns (e.g., "her," "them") with concrete nouns to improve downstream detection.
+ * &nbsp; Plurality and Directional Cue Extraction: We determine if the target is singular or plural and extract any spatial cues from the instruction.
 
- * NER-based Target Detection: Using a fine-tuned BERT model with Low-Rank Adaptation (LoRA), we identify the main targets in the instruction by framing the problem as a Named Entity Recognition (NER) task. 
- * Pronoun Resolution: A dedicated mechanism replaces ambiguous pronouns (e.g., "her," "them") with concrete nouns to improve downstream detection.
- * Plurality and Directional Cue Extraction: We determine if the target is singular or plural and extract any spatial cues from the instruction.
-
-2. Guided Target Grounding:
+**2. Guided Target Grounding:**
 This stage details how we use the linguistic information to find and select the correct object(s) in the image.
+ * &nbsp; Grounding with GroundingDINO: We use GroundingDINO to detect candidate objects based on the detected target noun phrases.
+ * &nbsp; Plurality-Based Bounding Box Filtering: A filter refines these detections by keeping only the boxes that match the singular or plural nature of the target.
+ * &nbsp; Spatial Reasoning: Our system uses directional cues to select the correct object from multiple candidates, handling both absolute ("the left car") and relative directions ("the lamp to the right of the bed").
+ * &nbsp; Mask Generation: The final selected bounding box(es) are then used by the Segment Anything Model (SAM) to generate a high-quality pixel mask.
 
- * Grounding with GroundingDINO: We use GroundingDINO to detect candidate objects based on the detected target noun phrases.
- * Plurality-Based Bounding Box Filtering: A filter refines these detections by keeping only the boxes that match the singular or plural nature of the target.
- * Spatial Reasoning: Our system uses directional cues to select the correct object from multiple candidates, handling both absolute ("the left car") and relative directions ("the lamp to the right of the bed").
- * Mask Generation: The final selected bounding box(es) are then used by the Segment Anything Model (SAM) to generate a high-quality pixel mask.
-
-3. Guided Object Generation:
+**3. Guided Object Generation:**
 This is a specialized path that is triggered when the instruction requires adding a new object.
+ * &nbsp; Size Prediction: When the instruction is to add a new object relative to an existing one, our size prediction model estimates the dimensions of the new object based on the reference object's size and contextual information. This model is trained on a custom dataset of co-planar objects to ensure realistic size relationships.
+ * &nbsp; Mask Generation: A rectangular mask is automatically created at the correct location with the predicted size, providing precise guidance for the new object's placement.
 
- * Size Prediction: When the instruction is to add a new object relative to an existing one, our size prediction model estimates the dimensions of the new object based on the reference object's size and contextual information. This model is trained on a custom dataset of co-planar objects to ensure realistic size relationships.
- * Mask Generation: A rectangular mask is automatically created at the correct location with the predicted size, providing precise guidance for the new object's placement.
-
-4. Localized Image Editing
-The final editing step uses a modified version of the InstructPix2Pix diffusion model. Following the approach of Grounded-InstructPix2Pix, it utilizes the latent blending technique proposed in Blended Latent Diffusion. The pipeline passes a simplified, direct instruction to the editing model, which removes confusing contextual information and enhances the semantic fidelity of the final edit.
+**4. Localized Image Editing**
+The final editing step uses a modified version of the InstructPix2Pix diffusion model. Following the approach of Grounded-InstructPix2Pix, it utilizes Blended Latent Diffusion. The pipeline passes a simplified, direct instruction to the editing model, which removes confusing contextual information and enhances the semantic fidelity of the final edit.
 This modular design enables GGIP2P to achieve superior performance in both instruction fidelity and background preservation while remaining computationally efficient.	
 </p>
 
