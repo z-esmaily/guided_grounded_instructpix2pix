@@ -9,7 +9,7 @@
 </p>
 <p align="center">
   <em> multi-pass reasoning process for a relative instruction &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em>
-  <em>&nbsp;&nbsp;&nbsp;&nbsp; guided size prediction for an object generation instruction </em>
+  <em>&nbsp;&nbsp; guided size prediction for an object generation instruction </em>
 </p>
 <p align="justify">
 We introduce Guided-Grounded-InstructPix2Pix (GGIP2P), a novel pipeline that introduces a multi-step grounding and disambiguation process for instruction-based image editing. Our pipeline addresses the limitations of previous methods, which often struggle with complex instructions and the generation of new objects. GGIP2P operates through a multi-step process to ensure accurate target grounding and editing.
