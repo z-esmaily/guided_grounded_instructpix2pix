@@ -9,7 +9,7 @@
 </p>
 <p align="center">
   <em> multi-pass reasoning process for a relative instruction &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em>
-  <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; guided size prediction for an object generation instruction </em>
+  <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; guided size prediction for an object generation instruction </em>
 </p>
 <p align="justify">
 We introduce Guided-Grounded-InstructPix2Pix (GGIP2P), a novel pipeline that introduces a multi-step grounding and disambiguation process for instruction-based image editing. Our pipeline addresses the limitations of previous methods, which often struggle with complex instructions and the generation of new objects. GGIP2P operates through a multi-step process to ensure accurate target grounding and editing.
@@ -42,9 +42,9 @@ You need to download the following pre-trained models:
 
 GroundingDINO: You can find instructions for the official installation on the [GroundingDINO GitHub page](https://github.com/IDEA-Research/GroundingDINO). 
 
-We have also prepared a pre-configured folder, which you can download from [here](https://drive.google.com/) and place in the root directory.
+We have also prepared a pre-configured folder, which you can download from [here]([https://drive.google.com/](https://drive.google.com/drive/folders/1A0PLwROvSYL1KqthKtiqm7Js3Raw551F?usp=drive_link)) and place in the root directory.
 
-SAM Model: Download the Segment Anything Model from [here](https://github.com/facebookresearch/segment-anything) and put its path in sam_path in external_mask_extractor.py.
+SAM Model: Download the Segment Anything Model from [Segment anything Github page](https://github.com/facebookresearch/segment-anything) and put its path in sam_path in external_mask_extractor.py.
 
 You will also need to install the following dependencies:
 
@@ -60,9 +60,9 @@ You will also need to install the following dependencies:
 	pip install transformers torch peft tqdm numpy scikit-learn
 
 ## Our Models & Datasets  
-Download our pre-trained "instruction target detection" and "size predictor" models from [here](https://drive.google.com/), and place them in the `"models"` directory
+Download our pre-trained "instruction target detection" and "size predictor" models from [here](https://drive.google.com/drive/folders/1A0PLwROvSYL1KqthKtiqm7Js3Raw551F?usp=drive_link), and place them in the `"models"` directory
 
-Datasets (Optional): You can download our custom datasets from [here](https://drive.google.com/)
+Datasets (Optional): You can download our custom datasets from [here]([https://drive.google.com/](https://drive.google.com/drive/folders/1A0PLwROvSYL1KqthKtiqm7Js3Raw551F?usp=drive_link))
 
 
 ## Easy to use
