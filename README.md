@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="imgs/main_architecture_for_relative.png" alt="relative_arch" width="45%" />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="imgs/main_architecture_for_add.png" alt="add_arch" width="45%" />
 </p>
 <p align="center">
