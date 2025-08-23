@@ -8,10 +8,13 @@
   <img src="imgs/main_architecture_for_add.png" alt="add_arch" width="45%" />
 </p>
 <p align="center">
-  <em> multi-pass reasoning process for a relative referd object &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em>
+  <em> multi-pass reasoning process for a relative referred object &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em>
   <em>guided size prediction for an object generation </em>
 </p>
 <p align="justify">
+	
+---
+	
 We introduce Guided-Grounded-InstructPix2Pix (GGIP2P), a novel pipeline that introduces a multi-step grounding and disambiguation process for instruction-based image editing. Our pipeline addresses the limitations of previous methods, which often struggle with complex instructions and the generation of new objects. GGIP2P operates through a multi-step process to ensure accurate target grounding and editing.
 
 **1. Instruction Disambiguation and Initial Target Identification:**
@@ -44,7 +47,7 @@ GroundingDINO: You can find instructions for the official installation on the [G
 
 We have also prepared a pre-configured folder, which you can download from [here]([https://drive.google.com/](https://drive.google.com/drive/folders/1A0PLwROvSYL1KqthKtiqm7Js3Raw551F?usp=drive_link)) and place in the root directory.
 
-SAM Model: You can find instructions for download it from the [Segment Anything Github page](https://github.com/facebookresearch/segment-anything) and put its path in sam_path in external_mask_extractor.py.
+SAM Model: You can find instructions for downloading the SAM model from the [Segment Anything Github page](https://github.com/facebookresearch/segment-anything). Once downloaded, you must put its path in sam_path in external_mask_extractor.py.
 
 You will also need to install the following dependencies:
 
