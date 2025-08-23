@@ -65,7 +65,7 @@ You will also need to install the following dependencies:
 ## Our Models & Datasets  
 Download our pre-trained "instruction target detection" and "size predictor" models from [here](https://drive.google.com/drive/folders/1A0PLwROvSYL1KqthKtiqm7Js3Raw551F?usp=drive_link), and place them in the `"models"` directory
 
-Datasets (Optional): You can download our custom datasets from [here]([https://drive.google.com/](https://drive.google.com/drive/folders/1A0PLwROvSYL1KqthKtiqm7Js3Raw551F?usp=drive_link))
+Datasets (Optional): You can download our custom datasets from [here]([https://drive.google.com/](https://drive.google.com/drive/folders/1A0PLwROvSYL1KqthKtiqm7Js3Raw551F?usp=drive_link)
 
 
 ## Easy to use
