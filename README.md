@@ -44,7 +44,7 @@ GroundingDINO: You can find instructions for the official installation on the [G
 
 We have also prepared a pre-configured folder, which you can download from [here]([https://drive.google.com/](https://drive.google.com/drive/folders/1A0PLwROvSYL1KqthKtiqm7Js3Raw551F?usp=drive_link)) and place in the root directory.
 
-SAM Model: Download the Segment Anything Model from [Segment anything Github page](https://github.com/facebookresearch/segment-anything) and put its path in sam_path in external_mask_extractor.py.
+SAM Model: You can find instructions for download it from the [Segment Anything Github page](https://github.com/facebookresearch/segment-anything) and put its path in sam_path in external_mask_extractor.py.
 
 You will also need to install the following dependencies:
 
