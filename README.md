@@ -1,6 +1,6 @@
 # Guided-Grounded-InstructPix2Pix (GGIP2P)
 
-**Official PyTorch implementation of the paper "Guided-Grounded-InstructPix2Pix (GGIP2P): Instruction-Based Image Editing with Grounding and Mask Generation Control"** by zahra esmaily, Hossein Ebrahimpour-Komleh
+**Official PyTorch implementation of the manuscript "Guided-Grounded-InstructPix2Pix (GGIP2P): Instruction-Based Image Editing with Grounding and Mask Generation Control"** by zahra esmaily, Hossein Ebrahimpour-Komleh
 
 <p align="center">
   <img src="imgs/main_architecture_for_relative2.png" alt="relative_arch" width="45%" />
@@ -45,7 +45,7 @@ You need to download the following pre-trained models:
 
 GroundingDINO: You can find instructions for the official installation on the [GroundingDINO GitHub page](https://github.com/IDEA-Research/GroundingDINO). 
 
-We have also prepared a pre-configured folder, which you can download from [here](https://drive.google.com/drive/folders/18NinD0UIj6bYACu_MOESuf1OE3WR4uBr?usp=sharing) and place in the root directory.
+To simplify the setup, we also provide a pre-configured folder available for download [here](https://drive.google.com/drive/folders/18NinD0UIj6bYACu_MOESuf1OE3WR4uBr?usp=sharing) This folder is provided under the original Apache 2.0 License. Please place it in the root directory
 
 SAM Model: You can find instructions for downloading the SAM model from the [Segment Anything Github page](https://github.com/facebookresearch/segment-anything). Once downloaded, you must put its path in sam_path in external_mask_extractor.py.
 
@@ -63,7 +63,8 @@ You will also need to install the following dependencies:
 	pip install transformers torch peft tqdm numpy scikit-learn
 
 ## Our Models & Datasets  
-Download our pre-trained "instruction target detection" and "size predictor" models from [here](https://drive.google.com/drive/folders/1yLlHSvAhK7ieSoF6Wz0_vBHQ0wCxclxP?usp=sharing), and place them in the `"models"` directory
+Our pre-trained models for "instruction target detection" and "size predictor" are included in the `"/models"` directory. 
+We also provide a separate download link [here](https://drive.google.com/drive/folders/1yLlHSvAhK7ieSoF6Wz0_vBHQ0wCxclxP?usp=sharing)
 
 Datasets (Optional): You can download our custom datasets from [here](https://drive.google.com/drive/folders/1_ugXdxeDiDiH8MTYpPLOVhbkyN72nJAK?usp=sharing)
 
