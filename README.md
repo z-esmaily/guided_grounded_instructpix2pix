@@ -45,14 +45,16 @@ You need to download the following pre-trained models:
 
 GroundingDINO: You can find instructions for the official installation on the [GroundingDINO GitHub page](https://github.com/IDEA-Research/GroundingDINO). 
 
-To simplify the setup, we also provide a pre-configured folder available for download [here](https://drive.google.com/drive/folders/18NinD0UIj6bYACu_MOESuf1OE3WR4uBr?usp=sharing) This folder is provided under the original Apache 2.0 License. Please place it in the root directory
+To simplify the setup, we used below instructions:
+
+ 	pip install --upgrade pip setuptools wheel
+	pip install groundingdino-py
 
 SAM Model: You can find instructions for downloading the SAM model from the [Segment Anything Github page](https://github.com/facebookresearch/segment-anything). Once downloaded, you must put its path in sam_path in external_mask_extractor.py.
 
 You will also need to install the following dependencies:
 
-	# Install GroundingDINO, Spacy and Segment Anything
-	python -m pip install -e GroundingDINO
+	# Install Spacy and Segment Anything
  	python -m spacy download en_core_web_sm
 	pip install segment-anything
 	
