@@ -52,13 +52,14 @@ To simplify the setup, we used below instructions:
 
 SAM Model: You can find instructions for downloading the SAM model from the [Segment Anything Github page](https://github.com/facebookresearch/segment-anything). Once downloaded, you must put its path in sam_path in external_mask_extractor.py.
 
+then install the following:
+
+	pip install segment-anything
+
 You will also need to install the following dependencies:
 
-	# Install Spacy and Segment Anything
  	python -m spacy download en_core_web_sm
-	pip install segment-anything
 	
-	# Install other required libraries
 	pip install diffusers transformers accelerate scipy safetensors
 	pip install torchmetrics
 	pip install git+https://github.com/openai/CLIP.git
