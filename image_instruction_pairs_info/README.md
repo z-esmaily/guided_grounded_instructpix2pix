@@ -15,7 +15,4 @@ This directory contains the full metadata for the 226 instruction–target pairs
 * **`Type`**: The category of the instruction (e.g., Absolute Direction).
 
 ## Reproducibility
-For transparency, we have included the direct source links for all images. These images are primarily from Unsplash, Pixabay, and Flickr, and are publicly available for download.
-
----
-*For visual examples, please refer to **Table A1** and **Figure A1** in Appendix A of our paper.*
+For transparency, we have included the direct source links for all images. These images are predominantly sourced from Unsplash, with additional samples from Pixabay and Flickr, and are all publicly available for download.
