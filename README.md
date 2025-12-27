@@ -71,6 +71,8 @@ We also provide a separate download link [here](https://drive.google.com/drive/f
 
 Datasets (Optional): You can download our custom datasets from [here](https://drive.google.com/drive/folders/1_ugXdxeDiDiH8MTYpPLOVhbkyN72nJAK?usp=sharing)
 
+## Evaluation
+The evaluation of this project is based on 226 instruction–target pairs. The complete metadata, including source links and instruction types, is available in the `"/image_instruction_pairs_info"` directory.
 
 ## Easy to use
 To run our proposed pipeline, we provide a Jupyter Notebook.
