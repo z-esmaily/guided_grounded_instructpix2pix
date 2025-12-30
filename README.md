@@ -77,7 +77,7 @@ The evaluation of this project is based on 226 instruction–target pairs. The c
 ## Easy to use
 To run our proposed pipeline, we provide a Jupyter Notebook.
 
-	GGIP2P_pipline.ipynb
+	GGIP2P_Proposed.ipynb
 
 ## Examples
 <p align="center">
